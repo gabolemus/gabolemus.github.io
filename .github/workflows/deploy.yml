@@ -17,8 +17,8 @@ jobs:
           node-version: "18.x"
       - name: Build
         run: |
-          npm install
-          npm run build
+          yarn install
+          yarn build
       - name: Setup Git
         run: |
           git config --global user.name "bot"
