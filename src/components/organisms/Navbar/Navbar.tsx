@@ -1,6 +1,7 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import { isMobileScreen } from "../../../utils/utils";
 import "./Navbar.scss";
+import { navPages } from "./navPages";
 
 /** The navbar component */
 const Navbar = () => {
@@ -52,15 +53,15 @@ const Navbar = () => {
           )}
         </div>
         <div className={linksClass}>
-          <a href="/" className={currURL === "/" ? "active" : ""}>
-            Home
-          </a>
-          <a
-            href="/work-experience"
-            className={currURL === "/work-experience" ? "active" : ""}
-          >
-            Work Experience
-          </a>
+          {navPages.map((page) => (
+            <a
+              href={page.path}
+              key={page.name}
+              className={currURL === page.path ? "active" : ""}
+            >
+              {page.name}
+            </a>
+          ))}
         </div>
       </nav>
       <div className="navbar__spacer" />
