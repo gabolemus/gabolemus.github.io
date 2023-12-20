@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGlobe } from "@fortawesome/free-solid-svg-icons";
 import { faServer } from "@fortawesome/free-solid-svg-icons";
 import { faDocker } from "@fortawesome/free-brands-svg-icons";
-import { faDev } from "@fortawesome/free-brands-svg-icons";
+import { faGear } from "@fortawesome/free-solid-svg-icons";
 import { faCode } from "@fortawesome/free-solid-svg-icons";
 
 /** Object that maps icon names to icon components */
@@ -15,7 +15,7 @@ export const projectIcons = {
   /** Docker icon */
   docker: faDocker,
   /** Dev frameworks icon */
-  frameworks: faDev,
+  frameworks: faGear,
   /** Programming languages icon */
   languages: faCode,
 };
