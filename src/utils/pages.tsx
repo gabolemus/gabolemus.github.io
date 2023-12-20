@@ -1,6 +1,7 @@
 // This file contains the app's page routes.
 
 import Home from "../components/pages/Home";
+import Portfolio from "../components/pages/Home";
 import WorkExperience from "../components/pages/WorkExperience";
 
 /** Interface for the pages to be shown in the navbar */
@@ -27,4 +28,5 @@ export const page = (path: string, name: string, element: JSX.Element) => {
 export const pages = [
   page("/", "Home", <Home />),
   page("/work-experience", "Work Experience", <WorkExperience />),
+  page("/portfolio", "Portfolio", <Portfolio />),
 ];
