@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
+import { pages } from "../../../utils/pages";
 import { isMobileScreen } from "../../../utils/utils";
 import "./Navbar.scss";
-import { navPages } from "./navPages";
 
 /** The navbar component */
 const Navbar = () => {
@@ -53,7 +53,7 @@ const Navbar = () => {
           )}
         </div>
         <div className={linksClass}>
-          {navPages.map((page) => (
+          {pages.map((page) => (
             <a
               href={page.path}
               key={page.name}
