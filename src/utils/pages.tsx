@@ -1,7 +1,7 @@
 // This file contains the app's page routes.
 
 import Home from "../components/pages/Home";
-import Portfolio from "../components/pages/Home";
+import Portfolio from "../components/pages/Portfolio";
 import WorkExperience from "../components/pages/WorkExperience";
 
 /** Interface for the pages to be shown in the navbar */
