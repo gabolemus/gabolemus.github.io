@@ -45,7 +45,9 @@ const Navbar = () => {
     <>
       <nav className={`navbar${isMobileScreen() ? " mobile" : ""}`}>
         <div className="navbar__container">
-          <div className="navbar__title">gabolemus.is-a.dev</div>
+          <div className="navbar__title">
+            <a href="/">gabolemus.is-a.dev</a>
+          </div>
           {isMobileScreen() && (
             <div className="navbar__menu-icon" onClick={toggleMobileLinksClass}>
               &#9776;
