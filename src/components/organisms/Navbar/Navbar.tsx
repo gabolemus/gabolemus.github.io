@@ -7,7 +7,7 @@ import "./Navbar.scss";
 const Navbar = () => {
   const [showLinks, setShowLinks] = useState<boolean>(!isMobileScreen());
   const [linksClass, setLinksClass] = useState<string>("navbar__links visible");
-  const currURL = window.location.pathname;
+  const currURL = window.location.hash;
 
   /**
    * Gets the class string for the links
@@ -59,7 +59,7 @@ const Navbar = () => {
             <a
               href={`#${page.path}`}
               key={page.name}
-              className={currURL === page.path ? "active" : ""}
+              className={currURL === `#${page.path}` ? "active" : ""}
             >
               {page.name}
             </a>
