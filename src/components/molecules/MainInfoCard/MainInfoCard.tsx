@@ -14,7 +14,8 @@ const MainInfoCard = () => {
             className="about-me__image"
           />
         </a>
-        <p className="about-me__description">Systems Engineer</p>
+        <p className="about-me__description">Systems Engineering and Computer Science Student</p>
+        {/* <p className="about-me__description">Estudiante de Ingeniería en Sistemas y Ciencias de la Computación</p> */}
         <div className="about-me__icons">
           <a href="mailto:gabriel.lemusp@gmail.com">
             <FontAwesomeIcon icon={icon({ name: "envelope" })} />
