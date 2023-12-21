@@ -57,7 +57,7 @@ const Navbar = () => {
         <div className={linksClass}>
           {pages.map((page) => (
             <a
-              href={page.path}
+              href={`#${page.path}`}
               key={page.name}
               className={currURL === page.path ? "active" : ""}
             >
