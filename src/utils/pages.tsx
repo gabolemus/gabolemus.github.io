@@ -26,9 +26,9 @@ export const page = (path: string, name: string, element: JSX.Element) => {
 
 /** Object that contains all the pages and those to be rendered in the navbar. */
 export const pages = [
-  page("/", "Home", <Home />),
-  page("/work-experience", "Work Experience", <WorkExperience />),
-  page("/portfolio", "Portfolio", <Portfolio />),
+  page("#/", "Home", <Home />),
+  page("#/work-experience", "Work Experience", <WorkExperience />),
+  page("#/portfolio", "Portfolio", <Portfolio />),
   // page("/", "Inicio", <Home />),
   // page("/experiencia-laboral", "Experiencia Laboral", <WorkExperience />),
   // page("/proyectos", "Proyectos", <Portfolio />),
