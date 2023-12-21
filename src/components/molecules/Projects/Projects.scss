@@ -41,6 +41,12 @@
         .card__link:visited {
           color: #275efe;
         }
+
+        br {
+          display: block;
+          content: "";
+            margin-top: 0.25rem;
+        }
       }
     }
   }
