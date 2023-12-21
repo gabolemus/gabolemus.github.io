@@ -8,7 +8,7 @@ const App = () => {
       {pages.map((page) => (
         <Route key={page.name} path={page.path} element={page.element} />
       ))}
-      <Route path="*" element={<Navigate to="/" />} />
+      <Route path="*" element={<Navigate to="#/" />} />
     </Routes>
   );
 };
