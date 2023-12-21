@@ -1,0 +1,88 @@
+@import "../../../sass/utilities/variables";
+
+.card-col {
+  a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    img.about-me__image {
+      padding: 0.5rem;
+      width: 100%;
+      height: auto;
+      object-fit: contain;
+      border-radius: 50%;
+      border: 0.25rem solid #334799;
+
+      &:hover {
+        border: 0.25rem solid #a9a9a9;
+      }
+    }
+
+    @media (min-width: 768px) {
+      width: 15%;
+    }
+
+    @media (max-width: 768px) {
+      width: 25%;
+    }
+
+    @media (max-width: 576px) {
+      width: 30%;
+    }
+  }
+
+  p.about-me__description {
+    margin: 1rem 0;
+    text-align: center;
+    font-size: 1.15rem;
+  }
+
+  div.about-me__icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 0.5rem;
+
+    @media (min-width: 768px) {
+      width: 50%;
+    }
+
+    @media (max-width: 768px) {
+      width: 75%;
+    }
+
+    @media (max-width: 576px) {
+      width: 100%;
+    }
+
+    a {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-decoration: none;
+      color: #334799;
+      padding: 0.5rem;
+      border-radius: 0.5rem;
+
+      &:hover {
+        color: #a9a9a9;
+        background-color: rgba(211, 211, 211, 0.25);
+      }
+
+      &:hover>svg {
+        fill: #fff;
+      }
+
+      svg {
+        width: 2.5rem;
+        height: 2.5rem;
+        fill: #334799;
+        transition: all 0.125s ease-in-out;
+      }
+    }
+  }
+}

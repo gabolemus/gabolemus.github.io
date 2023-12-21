@@ -1,0 +1,52 @@
+@import "../../../sass/utilities/variables";
+
+.skills {
+  &__row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 0.5rem;
+
+    &:not(:last-child) {
+      margin-bottom: 2.25rem;
+    }
+
+    @media (min-width: 768px) {
+      width: 50%;
+    }
+
+    @media (max-width: 768px) {
+      width: 75%;
+    }
+
+    @media (max-width: 576px) {
+      width: 100%;
+    }
+
+    svg {
+      width: 2.5rem;
+      height: 2.5rem;
+      color: #333;
+      fill: #333;
+      transition: all 0.125s ease-in-out;
+      flex: 1 1 25%;
+    }
+
+    div.skills__info {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      color: #333;
+      flex: 1 1 75%;
+
+      .skills__title {
+        margin-bottom: 0;
+      }
+
+      .skills__description {
+        margin-top: 0.25rem;
+      }
+    }
+  }
+}
