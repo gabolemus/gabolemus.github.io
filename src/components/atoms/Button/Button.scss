@@ -1,0 +1,88 @@
+@import "../../../sass/utilities/variables";
+
+.button {
+  color: $white;
+  padding: 1rem 2rem;
+  border-radius: 0.5rem;
+  font-size: 1.25rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.2s;
+  width: 100%;
+  margin-top: 0.5rem;
+  margin-bottom: 1.5rem;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  &.primary {
+    background-color: #334799;
+    border: 1px solid #334799;
+
+    &:hover {
+      background-color: darken(#334799, 10%);
+      border: 1px solid darken(#334799, 10%);
+    }
+  }
+
+  &.secondary {
+    background-color: #26a69a;
+    border: 1px solid #26a69a;
+
+    &:hover {
+      background-color: darken(#26a69a, 10%);
+      border: 1px solid darken(#26a69a, 10%);
+    }
+  }
+
+  &.tertiary {
+    background-color: #ffca28;
+    border: 1px solid #ffca28;
+
+    &:hover {
+      background-color: darken(#ffca28, 10%);
+      border: 1px solid darken(#ffca28, 10%);
+    }
+  }
+
+  &.danger {
+    background-color: #ef5350;
+    border: 1px solid #ef5350;
+
+    &:hover {
+      background-color: darken(#ef5350, 10%);
+      border: 1px solid darken(#ef5350, 10%);
+    }
+  }
+
+  &.warning {
+    background-color: #ffa726;
+    border: 1px solid #ffa726;
+
+    &:hover {
+      background-color: darken(#ffa726, 10%);
+      border: 1px solid darken(#ffa726, 10%);
+    }
+  }
+
+  &.success {
+    background-color: #66bb6a;
+    border: 1px solid #66bb6a;
+
+    &:hover {
+      background-color: darken(#66bb6a, 10%);
+      border: 1px solid darken(#66bb6a, 10%);
+    }
+  }
+
+  &.info {
+    background-color: #26c6da;
+    border: 1px solid #26c6da;
+
+    &:hover {
+      background-color: darken(#26c6da, 10%);
+      border: 1px solid darken(#26c6da, 10%);
+    }
+  }
+}
