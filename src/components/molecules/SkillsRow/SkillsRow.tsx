@@ -31,9 +31,6 @@ export interface SkillsRowProps {
 }
 
 const SkillsRow = ({ iconName, title, description }: SkillsRowProps) => {
-  console.log(`Type of iconName: ${typeof iconName}`);
-  console.log(`iconName: ${iconName}`);
-
   return (
     <div className="skills__row">
       <FontAwesomeIcon className="skills__icon" icon={projectIcons[iconName]} />
