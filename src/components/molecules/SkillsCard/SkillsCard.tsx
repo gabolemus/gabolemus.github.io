@@ -6,6 +6,7 @@ import { skills } from "./Skills";
 const SkillsCard = () => {
   return (
     <Card title="Skills">
+      {/* <Card title="Habilidades Técnicas"> */}
       <CardColumn>
         {skills.map((skill) => (
           <SkillsRow
