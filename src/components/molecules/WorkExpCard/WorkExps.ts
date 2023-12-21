@@ -52,7 +52,7 @@ export const workExps: WorkExpBlockProps[] = [
   {
     title: "Backend Developer Intern",
     company: "Terabit",
-    date: "January 2022 - February 2023",
+    date: "January 2023 - February 2023",
     description:
       "Collaborated with the development team, focusing on enhancing features within the documentation module. I contributed to features for the generation of reports using PHP and the PHPWord library, as well as API endpoints.",
     tasks: [
