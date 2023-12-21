@@ -1,8 +1,8 @@
 # gabolemus.is-a.dev
 My personal website.
 
-<!-- ![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/yuk7/yuk7.github.io/build.yml?style=flat-square) -->
-<!-- ![License](https://img.shields.io/github/license/yuk7/yuk7.github.io.svg?style=flat-square) -->
+<!-- ![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/gabolemus/gabolemus.github.io/build.yml?style=flat-square) -->
+<!-- ![License](https://img.shields.io/github/license/gabolemus/gabolemus.github.io.svg?style=flat-square) -->
 
 ## Environment
 ### Languages
