@@ -1,9 +1,22 @@
-import { useEffect } from "react";
 import Card from "../Card/Card";
-import { projects } from "./projects";
+import { useEffect } from "react";
+import { useTranslation } from "react-i18next";
 import "./Projects.scss";
 
 const Projects = () => {
+  const { t } = useTranslation();
+  const projectsLoc = t("projects", { returnObjects: true }) as {
+    projectLinkName: string;
+    githubLinkName: string;
+    projects: {
+      title: string;
+      subtitle: string;
+      description: string;
+      githubLink: string;
+      projectLink: string;
+    }[];
+  };
+
   useEffect(() => {
     const navbarHeight = document.querySelector(".navbar")?.clientHeight;
     const footerHeight = document.querySelector(".footer")?.clientHeight;
@@ -16,7 +29,7 @@ const Projects = () => {
 
   return (
     <div className="projects__container">
-      {projects.map((project, idx) => (
+      {projectsLoc.projects.map((project, idx) => (
         <Card key={idx} title={project.title}>
           <h3>{project.subtitle}</h3>
           <p>{project.description}</p>
@@ -27,7 +40,7 @@ const Projects = () => {
               rel="noreferrer"
               className="card__link"
             >
-              Project Link
+              {projectsLoc.projectLinkName}
             </a>
           )}
           <br />
@@ -38,7 +51,7 @@ const Projects = () => {
               rel="noreferrer"
               className="card__link"
             >
-              Github Link
+              {projectsLoc.githubLinkName}
             </a>
           )}
         </Card>
