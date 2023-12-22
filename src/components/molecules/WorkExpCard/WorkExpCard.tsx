@@ -1,14 +1,19 @@
 import Card from "../Card/Card";
-import WorkExpBlock from "../WorkExpBlock/WorkExpBlock";
-import { workExps } from "./WorkExps";
+import WorkExpBlock, { WorkExpBlockProps } from "../WorkExpBlock/WorkExpBlock";
+import { useTranslation } from "react-i18next";
 import "./WorkExpCard.scss";
 
 const WorkExpCard = () => {
+  const { t } = useTranslation();
+  const workExpLoc = t("workExp", { returnObjects: true }) as {
+    title: string;
+    experiences: WorkExpBlockProps[];
+  };
+
   return (
-    <Card title="Work Experience">
-      {/* <Card title="Experiencia Laboral"> */}
+    <Card title={workExpLoc.title}>
       <div className="experiences">
-        {workExps
+        {workExpLoc.experiences
           .slice(0)
           .reverse()
           .map((workExp, idx) => (

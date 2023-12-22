@@ -1,0 +1,155 @@
+{
+  "languages": ["Inglés", "Español"],
+  "navbar": [
+    {
+      "name": "Inicio",
+      "link": "#/"
+    },
+    {
+      "name": "Experiencia Laboral",
+      "link": "#/experiencia-laboral"
+    },
+    {
+      "name": "Proyectos",
+      "link": "#/proyectos"
+    }
+  ],
+  "position": "Estudiante de Ingeniería en Sistemas y Ciencias de la Computación",
+  "skills": {
+    "title": "Habilidades Técnicas",
+    "skills": [
+      {
+        "title": "Desarrollo Web",
+        "description": "HTML5, CSS3, JavaScript, TypeScript, PHP",
+        "iconName": "globe"
+      },
+      {
+        "title": "Desarrollo Backend",
+        "description": "Node.js, Express, MongoDB, MySQL",
+        "iconName": "server"
+      },
+      {
+        "title": "Contenedores",
+        "description": "Docker, Docker Compose",
+        "iconName": "docker"
+      },
+      {
+        "title": "Frameworks & Tecnologías",
+        "description": "React, Bootstrap, Material UI, Sass, jQuery",
+        "iconName": "frameworks"
+      },
+      {
+        "title": "Lenguajes de Programación",
+        "description": "Python, Rust, C++",
+        "iconName": "languages"
+      }
+    ]
+  },
+  "education": {
+    "title": "Educación",
+    "education": [
+      {
+        "title": "Ingeniería en Sistemas y Ciencias de la Computación",
+        "company": "Universidad del Istmo",
+        "date": "Enero 2019 - Noviembre 2023",
+        "description": "Promedio general: 93.39"
+      }
+    ]
+  },
+  "cv": {
+    "button": "Descargar CV",
+    "path": "/CV/CV - Gabriel Lemus - ES.pdf",
+    "name": "CV - Gabriel Lemus.pdf"
+  },
+  "workExp": {
+    "title": "Experiencia Laboral",
+    "experiences": [
+      {
+        "title": "Pasantía de Ingeniería de Software",
+        "company": "Allied Global",
+        "date": "Noviembre 2020 - Diciembre 2020",
+        "description": "Trabajé en la aplicación interna de una empresa BPO nacional. La aplicación valida la información de los empleados y les permite acceder a los sistemas internos de la compañía",
+        "tasks": [
+          "Activación de usuarios en el sistema de RRHH de la empresa.",
+          "Administración de usuarios en el sistema interno de la empresa.",
+          "Creación de encuestas para los usuarios de la aplicación."
+        ]
+      },
+      {
+        "title": "Pasantía de Data Science",
+        "company": "Vana",
+        "date": "Junio 2021 - Julio 2021",
+        "description": "Apoyé al equipo de data science de una empresa fintech para el análisis y refinamiento de los datos de los usuarios para mejorar la precisión del modelo que determina la capacidad de un usuario de pagar préstamos.",
+        "tasks": [
+          "Evaluación de datos de usuarios para determinar rasgos relevantes para la creación de perfiles de pago.",
+          "Diseño e implementación de técnicas de preprocesamiento de datos en modelos de aprendizaje automático.",
+          "Conexión del AWS S3 Data Lake con los modelos de aprendizaje automático."
+        ]
+      },
+      {
+        "title": "Pasantía de Ingeniería de Software",
+        "company": "Ecoquimsa",
+        "date": "Noviembre 2021 - Diciembre 2021",
+        "description": "Apoyé en el desarrollo de una aplicación móvil cross-platform utilizando React Native para un laboratorio de calidad del aire y agua.",
+        "tasks": [
+          "Desarrollo de una aplicación móvil para monitorear la calidad del aire alrededor del usuario y generar sugerencias de actividades al aire libre.",
+          "Integración de la API de PurpleAir para recuperar datos sobre la calidad del aire.",
+          "Implementación de React Native para desarrollo multiplataforma de la aplicación."
+        ]
+      },
+      {
+        "title": "Pasantía de Ingeniería de Software",
+        "company": "Allied Global",
+        "date": "Noviembre 2022 - Diciembre 2022",
+        "description": "Tuve la oportunidad de reincorporame a la empresa BPO nacional para una segunda pasantía, contribuyendo al desarrollo de una aplicación web fullstack para el registro de viajes en autobus.",
+        "tasks": [
+          "Desarrollo de una aplicación web React que utiliza service workers para permitir el acceso a la cámara para la captura de códigos QR en los autobuses de la empresa.",
+          "Colaboré con el equipo de desarrollo para diseñar e integrar funciones que garanticen el registro de rutas de autobuses y registros de los empleados pasajeros.",
+          "Realicé tareas de resolución de problemas y debugging para proporcionar un sistema de gestión de transporte de empleados optimizado."
+        ]
+      },
+      {
+        "title": "Pasantía de Desarrollador Backend",
+        "company": "Terabit",
+        "date": "Enero 2023 - Febrero 2023",
+        "description": "Colaboré con el equipo de desarrollo, enfocándome en mejorar las funciones dentro del módulo de documentación.",
+        "tasks": [
+          "Implementación de funcionalidades para la generación de informes usando PHP y la biblioteca PHPWord.",
+          "Conexión a la base de datos MySQL para la lectura de datos.",
+          "Desarrollo de una API REST para la integración con el resto del sistema."
+        ]
+      },
+      {
+        "title": "Pasantía de Desarrollador Backend",
+        "company": "Kingo Energy",
+        "date": "Marzo 2023 - Junio 2023",
+        "description": "Formé parte del equipo de desarrollo de una empresa de energía solar en la creación de funciones para el sistema de monitoreo de los módulos solares.",
+        "tasks": [
+          "Desarrollo de funcionalidades y mantenimiento del programa de reporte y monitoreo de los módulos solares.",
+          "Modificación de bibliotecas Python de código abierto para manejar los protocolos I2C, RS485 y LoRa en dispositivos Orange Pi.",
+          "Mantenimiento del programa encargado de conectarse a Ubidots, la plataforma IoT."
+        ]
+      }
+    ]
+  },
+  "projects": {
+    "projectLinkName": "Ver Proyecto",
+    "githubLinkName": "Ver Código",
+    "projects": [
+      {
+        "title": "Visualizador de Fractales",
+        "subtitle": "Proyecto Personal",
+        "description": "Aplicación web para visualizar fractales con distintas iteraciones.",
+        "githubLink": "https://github.com/gabolemus/Fractal-Visualization",
+        "projectLink": "https://fractal-visualization.web.app/"
+      },
+      {
+        "title": "Simulador de Blockchain",
+        "subtitle": "Proyecto Universitario Grupal",
+        "description": "Aplicación web para simular y visualizar el funcionamiento de un Blockchain",
+        "githubLink": "https://github.com/gabolemus/Simulador-Blockchain",
+        "projectLink": "https://blockchain-sim-test.web.app/"
+      }
+    ]
+  }
+}

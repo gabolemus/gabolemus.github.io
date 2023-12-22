@@ -1,18 +1,28 @@
+import { useTranslation } from "react-i18next";
 import Button, { ButtonType } from "../../atoms/Button/Button";
 
 const DownloadCVBtn = () => {
+  const { t } = useTranslation();
+  const downloadCVLoc = t("cv", { returnObjects: true }) as {
+    button: string;
+    path: string;
+    name: string;
+  };
+
   /** Callback to download the CV */
   const downloadCV = () => {
     const link = document.createElement("a");
-    link.href = "/CV - Gabriel Lemus - EN.pdf";
-    link.download = "CV - Gabriel Lemus - EN.pdf";
-    // link.href = "/CV - Gabriel Lemus - ES.pdf";
-    // link.download = "CV - Gabriel Lemus - ES.pdf";
+    link.href = downloadCVLoc.path;
+    link.download = downloadCVLoc.name;
     link.click();
   };
 
   return (
-    <Button text="Download CV" type={ButtonType.PRIMARY} onClick={downloadCV} />
+    <Button
+      text={downloadCVLoc.button}
+      type={ButtonType.PRIMARY}
+      onClick={downloadCV}
+    />
   );
 };
 
