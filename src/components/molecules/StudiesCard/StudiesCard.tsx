@@ -1,14 +1,19 @@
+import { useTranslation } from "react-i18next";
 import Card from "../Card/Card";
-import EducationBlock from "../EducationBlock/EducationBlock";
-import { workExps } from "./Studies";
+import EducationBlock, { EducationBlockProps } from "../EducationBlock/EducationBlock";
 import "./StudiesCard.scss";
 
 const StudiesCard = () => {
+  const { t } = useTranslation();
+  const studiesLoc = t("education", { returnObjects: true }) as {
+    title: string;
+    education: EducationBlockProps[];
+  };
+
   return (
-    <Card title="Education">
-      {/* <Card title="Formación Académica"> */}
+    <Card title={studiesLoc.title}>
       <div className="experiences">
-        {workExps
+        {studiesLoc.education
           .slice(0)
           .reverse()
           .map((workExp, idx) => (

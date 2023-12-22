@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { useTranslation } from "react-i18next";
 import { pages } from "../../../utils/pages";
 import { isMobileScreen } from "../../../utils/utils";
 import "./Navbar.scss";
@@ -8,6 +9,12 @@ const Navbar = () => {
   const [showLinks, setShowLinks] = useState<boolean>(!isMobileScreen());
   const [linksClass, setLinksClass] = useState<string>("navbar__links visible");
   const currURL = window.location.hash;
+
+  const { t } = useTranslation();
+  const navbarLoc = t("navbar", { returnObjects: true }) as {
+    name: string;
+    link: string;
+  }[];
 
   /**
    * Gets the class string for the links
@@ -55,13 +62,13 @@ const Navbar = () => {
           )}
         </div>
         <div className={linksClass}>
-          {pages.map((page) => (
+          {pages.map((page, idx) => (
             <a
               href={`#${page.path}`}
               key={page.name}
               className={currURL === `#${page.path}` ? "active" : ""}
             >
-              {page.name}
+              {navbarLoc[idx].name}
             </a>
           ))}
         </div>
