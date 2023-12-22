@@ -1,3 +1,4 @@
+import DownloadCVBtn from "../molecules/DownloadCVBtn/DownloadCVBtn";
 import WorkExpCard from "../molecules/WorkExpCard/WorkExpCard";
 import MainPage from "../templates/MainPage";
 
@@ -5,6 +6,7 @@ import MainPage from "../templates/MainPage";
 const WorkExperience = () => {
   return (
     <MainPage>
+      <DownloadCVBtn />
       <WorkExpCard />
     </MainPage>
   );
