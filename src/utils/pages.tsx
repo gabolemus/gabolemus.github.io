@@ -29,7 +29,4 @@ export const pages = [
   page("/", "Home", <Home />),
   page("/work-experience", "Work Experience", <WorkExperience />),
   page("/portfolio", "Portfolio", <Portfolio />),
-  // page("/", "Inicio", <Home />),
-  // page("/experiencia-laboral", "Experiencia Laboral", <WorkExperience />),
-  // page("/proyectos", "Proyectos", <Portfolio />),
 ];
