@@ -26,7 +26,7 @@ My personal website.
 # Install dependencies
 yarn install
 
-# Serve with hot reload at localhost:8080
+# Serve with hot reload at localhost:3000
 yarn start
 
 # Build for production
@@ -41,7 +41,7 @@ yarn run build
 |       |-deploy.yml (build and deploy page with changes from `main`)
 |       └-pr-to-main.yml (open a PR to `main` with changes from `develop`)
 |
-|-public
+|-public/
 |   |-CV/ (CV PDF files)
 |   |-index.html
 |   └-* (assets)
