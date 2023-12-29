@@ -1,8 +1,8 @@
 # gabolemus.is-a.dev
 My personal website.
 
-<!-- ![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/gabolemus/gabolemus.github.io/build.yml?style=flat-square) -->
-<!-- ![License](https://img.shields.io/github/license/gabolemus/gabolemus.github.io.svg?style=flat-square) -->
+![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/gabolemus/gabolemus.github.io/deploy.yml?style=flat-square)
+![License](https://img.shields.io/github/license/gabolemus/gabolemus.github.io.svg?style=flat-square)
 
 ## Environment
 ### Languages
@@ -16,51 +16,40 @@ My personal website.
 ### Library and Frameworks
 * React
 * Axios
-* lodash
 
 ### Hosting and CI
 * GitHub Pages (main branch)
 * GitHub Actions
 
-<!-- ## How to get started -->
-<!-- ```bash -->
-<!-- # Install dependencies -->
-<!-- npm install -->
-<!---->
-<!-- # Serve with hot reload at localhost:8080 -->
-<!-- npm run serve -->
-<!---->
-<!-- # Build for production -->
-<!-- npm run build -->
-<!-- ``` -->
-<!---->
-<!-- ## Directory structures -->
-<!-- ``` -->
-<!-- . -->
-<!-- |-.github -->
-<!-- |   |-workflows -->
-<!-- |   |   |-build.yml (run build only build when pushed) -->
-<!-- |   |   |-deploy.yml (build and push to main when pushed to source branch) -->
-<!-- |   |   |-lint.yml (run lint when pushed and pull requested) -->
-<!-- | -->
-<!-- |-public (file generate template) -->
-<!-- |   |-index.html (modified for supports SPA in GitHub Pages) -->
-<!-- |   |-404.html (redirects to index.html for supports SPA in GitHub Pages) -->
-<!-- |   |-* (assets, not related to main code) -->
-<!-- | -->
-<!-- |-src (source file directory) -->
-<!-- |   |-main.ts (entry point script) -->
-<!-- |   |-App.vue (main view) -->
-<!-- |   |-assets -->
-<!-- |   |   |-* (assets files) -->
-<!-- |   | -->
-<!-- |   |-router -->
-<!-- |   |   |-index.ts (vue router config) -->
-<!-- |   | -->
-<!-- |   |-components -->
-<!-- |   |   |-*.vue (vue components) -->
-<!-- |   | -->
-<!-- |   |-views -->
-<!-- |   |   |-_NotFoundView.vue (not found page) -->
-<!-- |   |   |-*.vue (sub views) -->
-<!-- ``` -->
+## Running the app
+```bash
+# Install dependencies
+yarn install
+
+# Serve with hot reload at localhost:8080
+yarn start
+
+# Build for production
+yarn run build
+```
+
+## Directory structures
+```
+.
+|-.github/
+|   └-workflows/
+|       |-deploy.yml (build and deploy page with changes from `main`)
+|       └-pr-to-main.yml (open a PR to `main` with changes from `develop`)
+|
+|-public
+|   |-CV/ (CV PDF files)
+|   |-index.html
+|   └-* (assets)
+|
+└-src (source file directory)
+    |-index.tsx (entry point of the app)
+    |-App.tsx (app router)
+    |-components/ (app components organized with atomic web design)
+    |-sass/ (app styles)
+    └-utils/ (app pages, text localization and general utility functions)
+```
