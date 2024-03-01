@@ -12,15 +12,15 @@
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^13.0.0",
     "@testing-library/user-event": "^13.2.1",
-    "@types/jest": "^27.0.1",
+    "@types/jest": "^29.5.12",
     "@types/lodash": "^4.14.202",
     "@types/node": "^16.7.13",
-    "@types/react": "^18.0.0",
+    "@types/react": "^18.2.61",
     "@types/react-dom": "^18.0.0",
     "axios": "^1.6.2",
     "babel-plugin-macros": "^3.1.0",
     "country-flag-icons": "^1.5.9",
-    "i18next": "^23.7.11",
+    "i18next": "^23.8.2",
     "i18next-browser-languagedetector": "^7.2.0",
     "i18next-http-backend": "^2.4.2",
     "lodash": "^4.17.21",
@@ -29,7 +29,7 @@
     "react-i18next": "^14.0.0",
     "react-scripts": "5.0.1",
     "typescript": "^4.4.2",
-    "web-vitals": "^2.1.0"
+    "web-vitals": "^3.5.2"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -58,12 +58,12 @@
     ]
   },
   "devDependencies": {
-    "@typescript-eslint/eslint-plugin": "^6.15.0",
+    "@typescript-eslint/eslint-plugin": "^7.0.0",
     "@typescript-eslint/parser": "^6.15.0",
-    "eslint": "^8.56.0",
-    "gh-pages": "^6.1.0",
-    "prettier": "^3.1.1",
-    "react-router-dom": "^6.21.0",
+    "eslint": "^8.57.0",
+    "gh-pages": "^6.1.1",
+    "prettier": "^3.2.5",
+    "react-router-dom": "^6.22.0",
     "sass": "^1.69.5"
   },
   "babelMacros": {
